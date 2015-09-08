@@ -1,0 +1,214 @@
+
+Title    : Slide
+Filename : Slide11.zip
+Version  : 1.1
+Date     : 10-11-97
+Author   : Nick "SiNGE" Bousman, Glenn "Griphis" Saaiman
+Email    : singe@ix.netcom.com, griphis@ix.netcom.com
+
+ Type of Mod
+ ------------
+ Quake C  : yes
+ Sound    : yes
+ MDL      : yes
+ Level    : no <- You need SLIDELV1.ZIP, the official Slide level pak.
+
+ Format of Mod
+ --------------
+ pak0.pak file.
+
+ Description:
+ -------------
+    Simply put, it's hoverboards in Quake. You and your opponents spawn at
+ the top of the downhill track. As soon as you walk under the rotating
+ floating start point, you become frictionless and slide down the track.
+ Get down as fast as possible, and hit the end point. If you make it in less
+ time than anyone else, you get 7 frags, otherwise you get 5. Make hard to
+ reach jumps and manuvers to get those glowy "bonus items". They're worth
+ a frag a piece. If there's checkpoints, you can't hit the end point until
+ you hit the checkpoints. So be careful how you move! Once you reach the
+ bottom of the track, run through the conveniently placed teleporter back
+ to the top of the level, to try it all over again!
+
+ Things:
+ --------
+ - Start Point - Big rotating floaty thing. Run under it, and you "officially"
+    are starting your run through the track. You also get a hoverboard. :)
+ - Start Field - Works the same as a Start Point, but looks like a big flash
+    ing force field.
+ - End Point - At the end of a track, touch it. 5 frags, and 7 if you have
+    the best time. Looks like a big pole about chest high, with lights on it.
+ - Check Point - You MUST touch these (if they exist in a level) before you
+    can hit the end point. Look like globes on sticks, and they go Ding! when
+    you get 'em.
+ - Reslider - If you deactivated your board halfway through the level, run
+    over this to get a new hoverboard. They look like the start point, but
+    a bit smaller, and clamped into the floor rather than floating.
+ - Bonus Item - Twirly funky things, placed in odd places (or not so odd
+    places sometimes.) Supposed to be relatively hard to get, but you're
+    rewarded a nice juicy frag when you get one!
+ - Zip Plate - A big plate set in the floor that magnifies the force of the
+    ion generators in your hoverboard. When you go over one you get a big
+    SHOVE in whatever direction they're facing. The shove varies from plate
+    to plate, and sometimes plates will ignore sliders that are already
+    going at a certain high speed.
+ - Zip Field - Much like a zip plate, but is a whole _area_ of propulsion,
+    characterized by small orange particles moving in the direction they'll
+    push you.
+     
+
+
+ Useful Stuff to remember:
+ --------------------------
+ - YOU NEED the SLIDELV1.ZIP level pak for Slide levels. :)
+ - If you have the level pak, and don't know how to load levels, just type
+    "map slstart" in the console.
+ - VERY important!! When you're a board, you manuver by turning WHILE holding
+    the attack button. You must remember this. Otherwise your control won't
+    be worth crap.
+ - IMPULSE 1 (ie, selecting your axe) when you have your hoverboard, will
+    deactivate it. In cases of extreme bad luck, this is necessary.
+ - IMPULSE 100 in single player mode will activate and deactivate your board.
+ - The "temp1" varible is a server flags variable. By giving it a certain
+    number, you can configure Slide to the deathmatch game you choose. Below
+    is a current list of flags. To get the desired effect, add the numbers
+    of the flags you wish, and before the game type "temp1 #" into the
+    console, # being the sum of the flags you want.
+   1 - Allow suicide. Too many people just suicide when they make one little
+    mistake in Slide. Suicide is normally disabled. This will reenable it if
+    you can't take the pressure of losing. ;)
+   2 - No intraboard bash damage. You can still run into stuff to make it go
+    ow.. but players ON hoverboards can't hurt each other this way. You can
+    still try to throw someone off into lava tho. :)
+   4 - Heh. I made it so players gib if they try to go through the end point
+    without hitting checkpoints. Setting this flag just makes them bounce
+    instead.
+ - Here are the current noexit variables. These are GOOD to know if you're
+    setting up a DM game and/or server.
+   0 - No effect on exits. (default)
+   1 - People explode when they run into exits. (default)
+   2 - Same as one, but excluding the start level. (default)
+   3 - A random Slide level is picked out of all ten at each level change.
+        Also, people explode if they run into exits. (new)
+   4 - At the end of each Slide level, you go back to the Slide Start level
+        and get to pick the next place you're going to. (new)
+
+ Levels:
+ --------
+    There aren't any in this pak. You need SLIDELV1.ZIP for Slide levels.
+
+ Known Bugs:
+ ------------
+  - Not a bug, but I know there's no weapons.
+  - Landing sounds don't always register right.
+
+ Planned Stuff:
+ ---------------
+  - BETTER SOUNDS :P. Griphis and I threw the new board sounds together
+     real fast, and couldn't get anything better ready for this deadline.
+     We want to find (or make) better board sounds for the next Slide ver.
+  - Maybe do a second level pak?
+  - Perhaps some weapons, or booby traps, or powerups.
+
+ Level Specs:
+ -------------
+    Yes, as in QTank, we need levels. If you wanna make one, feel free to
+ try. :) It's a HELL of a lot easyier than normal Quake level making. It's
+ also easy for the designer to test how cool their level is (QTank, or DM
+ levels, you'd need to get on a server or a LAN for testing.) Just make
+ a downhill track, check it for coolness, and send it to me if it passes. :)
+ You MUST of course, have a start and end point, and deathmatch spawn points
+ if you want it to be played in DM. As for entity names, here's the list:
+    point_start : The start point. At the top of the track.
+    point_end : The end point. At the bottom. Don't worry about putting it on
+                slopes. It hugs the floor. :)
+    point_check : Checkpoints. Don't worry about fancy flags you need to add.
+                  Just put 'em in your level and they'll work.
+    item_reslide : Resliders. If there's a tricky spot where players might try
+                   to disable their board, you can put one of these here so
+                   they can continue on their merry way.
+    item_bonus : They respawn every 20 seconds. They float wherever you put
+                 them. They award the player one frag. Put these anywhere
+                 REAL dangerous if you want to get players to jump in lava
+                 willingly. :)
+    trigger_trip : A brush trigger. Players that hit this will trip up and
+                   lose their boards.
+    trigger_start : Exact same effect as the point_start, but in a trigger,
+                    otherwise viewed as a huge flashing brush. You REALLY
+                    should use the same start texture that I use, but any
+                    texture on the brush will work.
+    trigger_check : Same effect as a checkpoint, but in an easy-to-touch
+                    brush. You MUST have a dummy checkpoint pole for this!
+                    Without one, the theme of the game loses coherency.
+                    Give this trigger a "target", and make it the same
+                    "targetname" as a dummy checkpoint pole. Tricky for
+                    newbie level designers, but that's not my problem. :)
+                    The dummy checkpoint pole will light up when players hit
+                    this brush.
+    dummy_check : The aforementioned dummy checkpoint pole.
+    trigger_end : Same effect as an endpoint, but since it's a brush you can
+                  make it as wide as you like, or place it anywhere you like.
+                  This ALSO needs a dummy, but a dummy endpoint pole. Read
+                  the above section on the trigger_checks to see how this
+                  works.
+    dummy_end : The aforementioned dummy endpoint pole.
+    point_zip : Zip plates. They push the player in whatever direction
+                the plate is facing. Their health determines how much
+                they will push the player. Their max_health is a max speed
+                limit. Any players going faster than max_health will not
+                be affected by the zip plate's shove. If you set spawnflags
+                to 1, the point_zip will only appear in deathmatch.
+    trigger_impact : Kind of like a trigger_hurt, but it does damage based
+                     the speed of the player when he/she hits it.
+    trigger_peace : A misc trigger I threw in for one of Griphis' levels
+                    which I dunno if he's even gonna finish. When players
+                    are in this brush, they can't fire. Good for observation
+                    points.
+    trigger_zip : Works exactly like a point_zip, but it works as a brush.
+                  it has a short nextthink, so is technically more processor
+                  intensive than a point_zip, but won't cause problems unless
+                  you put a TON of them in your level.
+
+    NOTE: All checkpoints, endpoints, dummy checkpoints, and dummy endpoints
+          can be set so they don't glow (they'll still use the lit up skin)
+          if you set spawnflags to 1. This way, four dummy checkpoints for
+          the same checkpoint trigger won't slow down your computer if
+          they're all glowing... and you have a slow computer.
+
+ Version:
+ ---------
+ - 1.1 - Added some sounds for the Slider. Also on this date, we released the
+         first official level pak. :) 
+
+ - 1.03b - Added some ents. Fixed some code. Mostly for the level designers.
+
+ - 1.02b - Added zip plates
+           Boards spin around and shrink now when you deactivate them
+           Fixed the shooting forever bug with nails and start points
+
+ - 1.01b - Levels/data split into different paks
+           Added start, check, end, and trip triggers
+
+ - 1.0b - New! Premiered at Armageddon, Aug 17.
+
+ Misc:
+ ------
+ Check out Singe's page 'o patches at:
+
+ http://singe.telefragged.com
+
+ Singe is also the author of Rune Hunt, Artifact Quake, and --> *QTANK* <--.
+
+ Check out Griphis' page 'o Quake stuff, once he's ready to tell you where
+ it is!
+
+ Copyright and Distribution Permissions
+ ---------------------------------------
+ Authors may NOT use these modifications as a basis for other
+ publically available work unless they ask the author (me), and
+ get permission first.
+
+ Availability:
+ --------------
+ http://singe.telefragged.com/slide/slide.html
+ other places

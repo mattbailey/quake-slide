@@ -1,0 +1,72 @@
+title    : foxy slide 
+filename : slidefox.zip
+date     : 97/10/30
+author   : martin fuchs (gibs you as foxy ;)
+
+email    : fuchs@physik.fu-berlin.de
+
+what is this? : a level for snowboard-surfin-quake - SLIDE!
+                (get slide at http://singe.telefragged.com/slide/slide.html - and
+                have a look at qtank while you're there)
+
+credits  : id for creating quake and for making it so super-configurable
+           singe for slide
+           trey harrison and chris carollo for quest (YES!!!)
+           david jewsbury for stoneless 
+           iikka keranen for iklite (saved me tons of work and looks great)
+           
+
+type of mod
+-----------
+bsp      : yes
+map      : no   (mail me if you want it)
+quake c  : no
+sound    : no
+mdl      : no
+
+map info
+--------
+single player           : yes (beat the clock)
+coop                    : no (can't see why)
+deathmatch              : yes (beat your buddies - 16 starts)
+base                    : new level from scratch
+editors used            : quest, stoneless
+
+
+description
+-----------
+ok, if you haven't checked out slide, do it now! you're a riding a hoverboard
+downhill (mostly down, hehe) and either race for fastest time or try to shoot
+your friends off of their boards (try to jump on them ;). really this is one
+of the funmost mods i've seen for a while!
+
+this map has a few spots that are tough to get through: an uphill part where
+you have to use zip plates to get up fast and two bowls that you jump into
+and out of. testing the map i got through at 27 secs fastest, so it's doable.
+you can get through the map on foot if need be; there's enough resliders there
+to avoid that though (if you didn't break your leg, of course).
+
+hint: jump a lot, also when hitting zip plates to get more speed (especially
+uphill and to get through the bowls). there's a quad in the level, go find
+it yourself :)
+
+making maps for slide is harder than usual maps in terms of rspeeds as you
+want a lot of open space and large rooms. i set myself a limit of 700 polys; that
+way it was still fun on my p90 32mb; there are a few spots that are slower,
+but they are way off track, so if you go there, enjoy the scenery, but don't
+complain :)
+
+how to install the addon
+------------------------
+
+* unzip the file into a quake\slide\maps directory.
+* now run quake with 'quake -game slide +map slidefox' from the command line.
+
+copyright and distribution mambo jambo
+--------------------------------------
+
+as this is a map for slide, check the slide site for copyright stuff (i'm using
+his entities). don't make money with this. if you want to distribute it in
+electronic format, keep the zip file intact, including this .txt file and
+notify me.
+

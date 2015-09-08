@@ -1,0 +1,45 @@
+title    : 
+filename : RAWSPEED.ZIP
+date     : 12-15-97 ?
+author   : ? (Submitted to Singe. Name lost :/)
+
+email    : ? (Submitted to Singe. E-Mail address lost :/)
+
+what is this? : a level for snowboard-surfin-quake - SLIDE!
+                (get slide at http://singe.telefragged.com/slide/slide.html - and
+                have a look at qtank while you're there)
+
+credits  : id for creating Quake and for making it so super-configurable.
+           Singe for makin' Slide.
+
+type of mod
+-----------
+bsp      : yes
+quake c  : no
+sound    : no
+mdl      : no
+
+map info
+--------
+single player           : yes
+coop                    : no
+deathmatch              : yes
+base                    : new level from scratch
+editors used            : ?
+
+description (Singe's desc)
+---------------------
+   This Slide level is IMHO a little cramped, but it's a nice level. Sharp
+corners. Nice design. Pretty. :) It's fine for single player, but might get
+crowded in a LAN game.
+
+how to install the addon
+------------------------
+
+* unzip the file into a quake\slide\maps directory.
+* now run quake with 'quake -game slide +map <mapname>' from the command line.
+
+copyright and distribution
+--------------------------
+You may not use this level as a basis for other levels without permission
+of the author (NOT Singe.)
